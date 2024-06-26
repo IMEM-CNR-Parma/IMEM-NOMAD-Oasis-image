@@ -1,2 +1,4 @@
-nomad-measurements
-nomad-material-processing
+git+https://github.com/FAIRmat-NFDI/nomad-material-processing.git@main
+git+https://github.com/FAIRmat-NFDI/nomad-measurements.git@main
+git+https://github.com/FAIRmat-NFDI/nomad-analysis.git@main
+git+https://github.com/IMEM-CNR-Parma/IMEM-NOMAD-plugins.git@main
