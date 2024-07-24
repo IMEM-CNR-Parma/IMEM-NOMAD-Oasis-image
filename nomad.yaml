@@ -25,15 +25,7 @@ elastic:
     materials_index: nomad_oasis_materials_v1
 
 plugins:
-  options:
-    schemas/nomad_material_processing:
-      python_package: nomad_material_processing
-    schemas/nomad_measurements:
-      python_package: nomad_measurements
-    parsers/nomad_measurements/xrd:
-      python_package: nomad_measurements.xrd.parser
-
-include:
+  include:
     - 'schemas/nomad_material_processing'
     - 'schemas/nomad_measurements'
     - 'parsers/nomad_measurements/xrd'
@@ -42,6 +34,13 @@ include:
     - "imem_nomad_plugin.characterization:characterization_schema"
     - "imem_nomad_plugin.movpe:movpe_schema"
     - "imem_nomad_plugin.movpe.growth_excel:movpe_growth_excel_parser"
+  options:
+    schemas/nomad_material_processing:
+      python_package: nomad_material_processing
+    schemas/nomad_measurements:
+      python_package: nomad_measurements
+    parsers/nomad_measurements/xrd:
+      python_package: nomad_measurements.xrd.parser
 
   exclude:
     - 'parsers/nexus'
